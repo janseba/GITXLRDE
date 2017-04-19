@@ -78,13 +78,13 @@ SELECT [a.101_salesreturnsoffinvtas]
        b.tdiscperkg, 
        b.cupsperkg, 
        b.bridgehierarchy, 
-       b.reportingcategory, 
-       b.insplit, 
+       b.reportingcategory,  
        c.customername, 
        c.planningcustomer, 
        c.conditioncustomer, 
        c.distributionchannel, 
-       b.eptashierarchy 
+       b.eptashierarchy,
+       b.insplit
 FROM   (tblfacts AS a 
         LEFT JOIN tblsku AS b 
                ON a.sku = b.sku) 
